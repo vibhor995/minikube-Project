@@ -25,34 +25,34 @@ docker push your_username/your_image_name:tag
 **terraform workspace new grafana**
 
 
-**Start minikube**
+**Start minikube:**
 terraform apply -var="action=start"
 
-**Deploy kubernetes pod**
+**Deploy kubernetes pod:**
 terraform apply -var="action=deployment"
       
-**Deploy service**
+**Deploy service:**
 terraform apply -var="action=service"
 
-**Deploy network policy**
+**Deploy network policy:**
 terraform apply -var="action=network_policy"
 
 
-**Deploy Prometheus**
+**Deploy Prometheus:**
 Switch workspace:  terraform workspace select Prometheus
                cmd:  terraform apply -var="action=prometheus"
 
-**Deploy grafana**
+**Deploy grafana:**
 Switch workspace: terraform workspace select grafana
 cmd :                      terraform apply -var="action=grafana"
 
 
-**Stop minikube**
+**Stop minikube:**
 terraform apply -var="action=stop"
 
-**Clean**
+**Clean:**
 terraform apply -var="action=clean"
 
 
-**Delete**
+**Delete:**
 terraform apply -var="action=delete"
