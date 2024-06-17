@@ -19,6 +19,10 @@ docker push your_username/your_image_name:tag
 
 Create  a **terraform workspace** for maintaining multiple state files within a single **main.tf** for different sets of resources like **Prometheus** and **grafana** using the below command
 
+**terraform workspace new prometheus**
+
+**terraform workspace new grafana**
+
 
 **Start minikube**
 terraform apply -var="action=start"
