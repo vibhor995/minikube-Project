@@ -11,3 +11,40 @@ docker build -t your_username/your_image_name:tag .
 docker login
 docker push your_username/your_image_name:tag
 
+**Automated Setup and cluster deployment  using a Terraform  using Script Execution
+** [this will use main.tf file ]
+
+Create  a terraform workspace for maintaining multiple state files within a single** main.tf **for different sets of resources like Prometheus and grafana using the below command
+
+
+**Start minikube **
+terraform apply -var="action=start"
+
+**Deploy kubernetes pod**
+terraform apply -var="action=deployment"
+      
+**Deploy service**
+terraform apply -var="action=service"
+
+**Deploy network policy**
+terraform apply -var="action=network_policy"
+
+
+**Deploy Prometheus **
+Switch workspace:  terraform workspace select Prometheus
+               cmd:  terraform apply -var="action=prometheus"
+
+**Deploy grafana**
+Switch workspace: terraform workspace select grafana
+cmd :                      terraform apply -var="action=grafana"
+
+
+**Stop minikube**
+terraform apply -var="action=stop"
+
+**Clean**
+terraform apply -var="action=clean"
+
+
+**Delete**
+terraform apply -var="action=delete"
