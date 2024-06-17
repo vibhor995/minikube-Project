@@ -10,7 +10,9 @@ add **-auto-approve**,  include this flag, it automatically approves the propose
 # Docker image build and push
 
 docker build -t your_username/your_image_name:tag .
+
 docker login
+
 docker push your_username/your_image_name:tag
 
 **Automated Setup and cluster deployment  using a Terraform  using Script Execution** [this will use main.tf file ]
