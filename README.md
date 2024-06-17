@@ -17,7 +17,8 @@ docker push your_username/your_image_name:tag
 
 **Automated Setup and cluster deployment  using a Terraform  using Script Execution** [this will use main.tf file ]
 
-Create  a **terraform workspace** for maintaining multiple state files within a single **main.tf** for different sets of resources like **Prometheus** and **grafana** using the below command
+# Create  a **terraform workspace** for maintaining multiple state files within a single **main.tf** for different sets of resources like **Prometheus** and **grafana** using the below command
+
 
 **terraform workspace new prometheus**
 
