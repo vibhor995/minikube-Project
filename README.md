@@ -22,6 +22,8 @@ docker push your_username/your_image_name:tag
 **Run deployment action on default workspace but for prometheus and grafana installation switch to  their respective workspace and then run the script.**
 
 USE THIS COMMAND TO SWITCH AND RUN THERE RESPECTIVE ACTION
+
+
 **terraform workspace new Prometheus**
 
 **terraform workspace new grafana**
