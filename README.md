@@ -28,6 +28,7 @@ USE THIS COMMAND TO SWITCH AND RUN THEIR RESPECTIVE ACTION
 
 **terraform workspace new grafana**
 
+[All minikube operation and deployment will be running on default terraform workspace]
 
 **Start minikube:**
 terraform apply -var="action=start"
